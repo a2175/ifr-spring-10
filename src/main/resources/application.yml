@@ -12,6 +12,12 @@ spring:
 #        show_sql: true
         format_sql: true
 
+  data:
+    web:
+      pageable:
+        max-page-size: 10
+        default-page-size: 100
+
 logging.level:
   org.hibernate.SQL: debug
 # org.hibernate.type: trace #스프링 부트 2.x, hibernate5
